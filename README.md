@@ -1,8 +1,6 @@
 # SignGraph: A Sign Sequence is Worth Graphs of Nodes
 An implementation of the paper: SignGraph: A Sign Sequence is Worth Graphs of Nodes. (CVPR 2024) [[paper]]()
 
-
-
 ## Prerequisites
 
 - This project is implemented in Pytorch (>1.8). Thus please install Pytorch first.
@@ -15,7 +13,6 @@ An implementation of the paper: SignGraph: A Sign Sequence is Worth Graphs of No
 ## Implementation
 The implementation for the SignGraoh (line 18) is given in [./modules/resnet.py](https://github.com/hulianyuyy/CorrNet_CSLR/blob/main/modules/resnet.py).  
 
- 
  
 
 ## Data Preparation
@@ -51,8 +48,9 @@ The priorities of configuration files are: command line > config file > default 
 
 Note that you can choose the target dataset from phoenix2014/phoenix2014-T/CSL/CSL-Daily in line 3 in ./config/baseline.yaml.
  
+### Thanks
 
-This repo is based on [VAC (ICCV 2021)](https://openaccess.thecvf.com/content/ICCV2021/html/Min_Visual_Alignment_Constraint_for_Continuous_Sign_Language_Recognition_ICCV_2021_paper.html), [VIT (NIPS 2022)]() and [RTG-Net (ACM MM2023)]( ), Many thanks for their great work!
+This repo is based on [VAC (ICCV 2021)](https://openaccess.thecvf.com/content/ICCV2021/html/Min_Visual_Alignment_Constraint_for_Continuous_Sign_Language_Recognition_ICCV_2021_paper.html), [VIT (NIPS 2022)](https://arxiv.org/abs/2206.00272) and [RTG-Net (ACM MM2023)](https://dl.acm.org/doi/10.1145/3581783.3611820), Many thanks for their great work!
 
 ### Citation
 
@@ -61,10 +59,8 @@ If you find this repo useful in your research works, please consider citing:
 ```latex
 @inproceedings{SignGraph,
   title={SignGraph: A Sign Sequence is Worth Graphs of Nodes},
-  author={Gan, Shiwei and Yin, Yafeng and Jiang, Zhiwei and Xia, Kang and Xie, Lei and Lu, Sanglu},
-  booktitle={CVPR2024},
-  pages={763--772},
-  year={2023}
+  author={Gan, Shiwei and Yin, Yafeng and Jiang, Zhiwei and Wen, Hongkai and Xia, Kang and Xie, Lei and Lu, Sanglu},
+  booktitle={CVPR2024}, 
 }
 
 @inproceedings{gan2023towards,
@@ -75,7 +71,6 @@ If you find this repo useful in your research works, please consider citing:
   year={2023}
 }
 
-
 @inproceedings{gan2023contrastive,
   title={Contrastive learning for sign language recognition and translation},
   author={Gan, Shiwei and Yin, Yafeng and Jiang, Zhiwei and Xia, Kang and Xie, Lei and Lu, Sanglu},
@@ -84,6 +79,12 @@ If you find this repo useful in your research works, please consider citing:
   year={2023}
 }
 
-
- 
+@article{han2022vision,
+  title={Vision gnn: An image is worth graph of nodes},
+  author={Han, Kai and Wang, Yunhe and Guo, Jianyuan and Tang, Yehui and Wu, Enhua},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={8291--8303},
+  year={2022}
+} 
 ```
