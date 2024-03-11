@@ -36,7 +36,7 @@ We make some imporvments of our code, and provide newest checkpoionts and better
 |Dataset | Backbone | Dev WER | Del / Ins | Test WER  | Del / Ins | Pretrained model                                            |
 | --------| -------- | ---------- | ----------- | ----------- | -----------| --- |
 |Phoenix14T | SignGraph |  17.00|04.99/ 02.32| 19.44| 05.14/03.38|[[Google Drive]](https://drive.google.com/drive/folders/1FVvbXV7f2-5lJhVlCm-bqzyZ55C1LQ-g?usp=sharing) |
-|Phoenix14 |SignGraph|17.13|06.00/02.17| 18.17| 05.65/02.23|[[Google Drive]]() |
+|Phoenix14 |SignGraph|17.13|06.00/02.17| 18.17| 05.65/02.23|[[Google Drive]](https://drive.google.com/drive/folders/1O5JBkmnu2TO8Domzd60tqql8l1zNCzHc?usp=drive_link) |
 |CSL-Daily |SignGraph|-|-/-| -| -/-|[[Google Drive]]() |
 
 
