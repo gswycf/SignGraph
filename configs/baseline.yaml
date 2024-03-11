@@ -1,0 +1,56 @@
+feeder: dataset.dataloader_video.BaseFeeder
+phase: train
+dataset: phoenix2014-T
+#CSL-Daily
+# dataset: phoenix14-si5
+
+work_dir: ./work_dir/s2g_new_phoenix14t/
+batch_size: 4
+random_seed: 0 
+test_batch_size: 4
+num_worker: 20
+device: 0
+log_interval: 10000
+eval_interval: 1
+save_interval: 10
+# python in default
+evaluate_tool: python #sclite
+loss_weights:
+  SeqCTC: 1.0
+  # VAC
+  ConvCTC: 1.0
+  Dist: 25.0
+load_weights:  ./work_dir/s2g/_best_model.pt #./work_dir/newdis1/dev_00.00_epoch80_model.pt #../NewConSLR/work_dir/newdis1/dev_18.01_epoch25_model.pt
+load_checkpoints:  False
+optimizer_args:
+  optimizer: Adam
+  learning_rate:
+    base_lr: 0.0001
+#    Loss: 0.001
+  step: [20, 30, 35]
+  learning_ratio: 1
+  scheduler: ScheaL #consine
+  weight_decay: 0.0001
+  start_epoch: 0
+  num_epoch: 101 #50
+  nesterov: False
+
+feeder_args:
+  mode: 'train'
+  datatype: 'video'
+  num_gloss: -1
+  drop_ratio: 1.0
+  frame_interval: 1
+  image_scale: 1.0  # 0-1 represents ratio, >1 represents absolute value
+  input_size: 224
+
+model: slr_network.SLRModel
+decode_mode: beam
+model_args:
+  num_classes: 1296
+  c2d_type: resnet18
+  conv_type: 2
+  use_bn: 1
+  # SMKD
+  share_classifier: True
+  weight_norm: True
