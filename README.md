@@ -7,11 +7,15 @@ An implementation of the paper: SignGraph: A Sign Sequence is Worth Graphs of No
 
 - ctcdecode==0.4 [[parlance/ctcdecode]](https://github.com/parlance/ctcdecode)，for beam search decode.
 
+- For these who failed install ctcdecode (and it always does), you can download [ctcdecode here](https://drive.google.com/file/d/1LjbJz60GzT4qK6WW59SIB1Zi6Sy84wOS/view?usp=drive_link), unzip it, and try    
+`cd ctcdecode` and `pip install .`
+
+- Pealse follow [this link](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html) to install pytorch geometric
+
 - You can install other required modules by conducting 
    `pip install -r requirements.txt`
 
-## Implementation
-The implementation for the SignGraoh (line 18) is given in [./modules/resnet.py](https://github.com/hulianyuyy/CorrNet_CSLR/blob/main/modules/resnet.py).  
+ 
 
  
 
