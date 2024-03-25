@@ -38,7 +38,8 @@ We make some imporvments of our code, and provide newest checkpoionts and better
 | --------| -------- | ---------- | ----------- | ----------- | -----------| --- |
 |Phoenix14T | SignGraph |  17.00|04.99/ 02.32| 19.44| 05.14/03.38|[[Google Drive]](https://drive.google.com/drive/folders/1FVvbXV7f2-5lJhVlCm-bqzyZ55C1LQ-g?usp=sharing) |
 |Phoenix14 |SignGraph|17.13|06.00/02.17| 18.17| 05.65/02.23|[[Google Drive]](https://drive.google.com/drive/folders/1O5JBkmnu2TO8Domzd60tqql8l1zNCzHc?usp=drive_link) |
-|CSL-Daily |SignGraph|-|-/-| -| -/-|[[Google Drive]]() |
+|CSL-Daily |SignGraph|26.38|9.92/2.62| 25.84| 9.39/2.58|[[Google Drive]](https://drive.google.com/drive/folders/1t09Ixpiujw6WJrkSF8gwexvKJie4RGsh?usp=drive_link) |
+
 
 
 ​To evaluate the pretrained model, choose the dataset from phoenix2014/phoenix2014-T/CSL/CSL-Daily in line 3 in ./config/baseline.yaml first, and run the command below：   
