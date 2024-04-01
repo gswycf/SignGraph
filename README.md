@@ -7,7 +7,7 @@ An implementation of the paper: SignGraph: A Sign Sequence is Worth Graphs of No
 
 - ctcdecode==0.4 [[parlance/ctcdecode]](https://github.com/parlance/ctcdecode)，for beam search decode.
 
-- For these who failed install ctcdecode (and it always does), you can download [ctcdecode here](https://drive.google.com/file/d/1LjbJz60GzT4qK6WW59SIB1Zi6Sy84wOS/view?usp=drive_link), unzip it, and try    
+- For these who failed install ctcdecode (and it always does), you can download [ctcdecode here](https://drive.google.com/file/d/1LjbJz60GzT4qK6WW59SIB1Zi6Sy84wOS/view?usp=sharing), unzip it, and try    
 `cd ctcdecode` and `pip install .`
 
 - Pealse follow [this link](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html) to install pytorch geometric
@@ -37,8 +37,8 @@ We make some imporvments of our code, and provide newest checkpoionts and better
 |Dataset | Backbone | Dev WER | Del / Ins | Test WER  | Del / Ins | Pretrained model                                            |
 | --------| -------- | ---------- | ----------- | ----------- | -----------| --- |
 |Phoenix14T | SignGraph |  17.00|04.99/ 02.32| 19.44| 05.14/03.38|[[Google Drive]](https://drive.google.com/drive/folders/1FVvbXV7f2-5lJhVlCm-bqzyZ55C1LQ-g?usp=sharing) |
-|Phoenix14 |SignGraph|17.13|06.00/02.17| 18.17| 05.65/02.23|[[Google Drive]](https://drive.google.com/drive/folders/1O5JBkmnu2TO8Domzd60tqql8l1zNCzHc?usp=drive_link) |
-|CSL-Daily |SignGraph|26.38|9.92/2.62| 25.84| 9.39/2.58|[[Google Drive]](https://drive.google.com/drive/folders/1t09Ixpiujw6WJrkSF8gwexvKJie4RGsh?usp=drive_link) |
+|Phoenix14 |SignGraph|17.13|06.00/02.17| 18.17| 05.65/02.23|[[Google Drive]](https://drive.google.com/drive/folders/1O5JBkmnu2TO8Domzd60tqql8l1zNCzHc?usp=sharing) |
+|CSL-Daily |SignGraph|26.38|9.92/2.62| 25.84| 9.39/2.58|[[Google Drive](https://drive.google.com/drive/folders/1t09Ixpiujw6WJrkSF8gwexvKJie4RGsh?usp=sharing) |
 
 
 
