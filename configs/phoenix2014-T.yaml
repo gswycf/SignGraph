@@ -1,7 +1,5 @@
-dataset_root: "/root/gsw/data/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/"
-
-#/data1/gsw/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/ #/root/gsw/Dataprocessing/PHOENIX-2014-T-release-v3/PHOENIX-2014-T #
-
+dataset_root: "/data/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/"
+ 
 dict_path: ./preprocess/phoenix2014-T/gloss_dict.npy
 evaluation_dir: ./evaluation/slr_eval
 evaluation_prefix: phoenix2014-T-groundtruth #
