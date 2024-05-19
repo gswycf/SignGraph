@@ -4,7 +4,7 @@ dataset: phoenix2014-T
 #CSL-Daily
 # dataset: phoenix14-si5
 
-work_dir: ./work_dir/s2g_new_phoenix14t/
+work_dir: ./work_dirt/
 batch_size: 4
 random_seed: 0 
 test_batch_size: 4
@@ -13,20 +13,18 @@ device: 0
 log_interval: 10000
 eval_interval: 1
 save_interval: 10
-# python in default
-evaluate_tool: python #sclite
+ 
+evaluate_tool: python 
 loss_weights:
-  SeqCTC: 1.0
-  # VAC
+  SeqCTC: 1.0 
   ConvCTC: 1.0
   Dist: 25.0
-load_weights:  ./work_dir/s2g/_best_model.pt #./work_dir/newdis1/dev_00.00_epoch80_model.pt #../NewConSLR/work_dir/newdis1/dev_18.01_epoch25_model.pt
+load_weights:  False
 load_checkpoints:  False
 optimizer_args:
   optimizer: Adam
   learning_rate:
-    base_lr: 0.0001
-#    Loss: 0.001
+    base_lr: 0.0001 
   step: [20, 30, 35]
   learning_ratio: 1
   scheduler: ScheaL #consine
@@ -50,7 +48,6 @@ model_args:
   num_classes: 1296
   c2d_type: resnet18
   conv_type: 2
-  use_bn: 1
-  # SMKD
+  use_bn: 1 
   share_classifier: True
   weight_norm: True
