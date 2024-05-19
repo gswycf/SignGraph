@@ -1,4 +1,4 @@
-dataset_root: /home/hulala/gsw/Dataprocessing/phoenix2014-release/phoenix-2014-multisigner #/root/gsw/Dataprocessing/phoenix2014-release/phoenix-2014-multisigner #
+dataset_root: /phoenix2014-release/phoenix-2014-multisigner 
 dict_path: ./preprocess/phoenix2014/gloss_dict.npy
 evaluation_dir: ./evaluation/slr_eval
 evaluation_prefix: phoenix2014-groundtruth
