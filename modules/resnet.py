@@ -90,12 +90,7 @@ class ResNet(nn.Module):
         self.temporalG2 = TemporalGraph(k=7 * 7, in_channels=512, drop_path=0)
         self.alpha = nn.Parameter(torch.ones(4), requires_grad=True)
         self.fc = nn.Linear(512 * block.expansion, num_classes)
-
-        # self.localG3 = Grapher(in_channels=128, kernel_size=3, dilation=1, conv='mr',
-        #                       act='relu', norm="batch", bias=True, stochastic=False,
-        #                       epsilon=0.0, r=1, n=28 * 28, drop_path=0.0, relative_pos=True)  # kernel_size=2
-        # self.temporalG3 = TemporalGraph(k=14 * 14 // 4, in_channels=128, drop_path=0)
-        # self.alpha = nn.Parameter(torch.ones(6), requires_grad=True)
+ 
 
         for m in self.modules():
             if isinstance(m, nn.Conv3d) or isinstance(m, nn.Conv2d):
@@ -173,21 +168,4 @@ def resnet34(**kwargs):
     model = ResNet(BasicBlock, [3, 4, 6, 3], **kwargs)
     return model
 
-
-def test():
-    #        batch, temp, channel, height, width  0,2,1,3,4
-    from thop import profile
-    net = resnet18()
-    y = torch.randn( 1, 3,100, 224, 224)
-    flops, params = profile(net, inputs=(y, ))
-    print(y.size(), flops/(1000**3), params/(1000**2))
-    t1 = time.time()
-    with torch.no_grad():
-        y = torch.randn(20, 3, 100, 224, 224)
-    print(1/((time.time()-t1)/20))
-
-
-
-if __name__ == '__main__':
-    test()
-# test()
+ 
