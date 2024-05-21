@@ -25,7 +25,7 @@ An implementation of the paper: SignGraph: A Sign Sequence is Worth Graphs of No
 
 2. PHOENIX2014-T datasetDownload the RWTH-PHOENIX-Weather 2014 Dataset [[download link]](https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX-2014-T/)
 
-3. CSL dataset： Request the CSL Dataset from this website [[download link]](https://ustc-slr.github.io/openresources/cslr-dataset-2015/index.html)
+3. CSL dataset： Request the CSL Dataset from this website [download link](https://ustc-slr.github.io/openresources/cslr-dataset-2015/index.html)
 
  
 Download datasets and extract them, no further data preprocessing needed. 
