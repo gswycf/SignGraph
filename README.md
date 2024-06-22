@@ -62,10 +62,12 @@ This repo is based on [VAC (ICCV 2021)](https://openaccess.thecvf.com/content/IC
 If you find this repo useful in your research works, please consider citing:
 
 ```latex
-@inproceedings{SignGraph,
+@inproceedings{gan2024signgraph,
   title={SignGraph: A Sign Sequence is Worth Graphs of Nodes},
-  author={Gan, Shiwei and Yin, Yafeng and Jiang, Zhiwei and Wen, Hongkai and Xia, Kang and Xie, Lei and Lu, Sanglu},
-  booktitle={CVPR2024}, 
+  author={Gan, Shiwei and Yin, Yafeng and Jiang, Zhiwei and Wen, Hongkai and Xie, Lei and Lu, Sanglu},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={13470--13479},
+  year={2024}
 }
 
 @inproceedings{gan2023towards,
