@@ -7,14 +7,7 @@ import numpy as np
 import random
 import torch.nn.functional as F
 
-
-def EucDis(x, y):
-    # x =[b, c, t_1, n], y=[b, c,t_1,n]
-    xy = torch.einsum('bctn,bctq->btnq', x, y)
-    xx = torch.einsum('bctn,bctq->btnq', x, x)
-    yy = torch.einsum('bctn,bctq->btnq', y, y)
-    return (xx+yy-2*xy) #-dis=sim
-
+ 
 
 def ForEucDis(x, y):
     with torch.no_grad():
@@ -23,26 +16,7 @@ def ForEucDis(x, y):
         y = y.permute(0, 2,3, 1)
         x = x.reshape(b, t, n, c)
         y = y.reshape(b, t, n, c)
-        return torch.cdist(x, y)
-
-
-
-
-def CosDis(x, y):
-    # x =[b, c, t_1, n], y=[b, c,t_1,n]
-    xy = torch.einsum('bctn,bctq->btnq', x, y)
-    xx = torch.einsum('bctn,bctq->btnq', x, x)
-    yy = torch.einsum('bctn,bctq->btnq', y, y)
-    return -xy/(torch.sqrt(xx)*torch.sqrt(yy))
-
-def Chebyshev(x, y):
-    x = torch.einsum('bctn,bctq->btnq', x, x)
-    y = torch.einsum('bctn,bctq->btnq', y, y)
-    return -torch.abs(x-y)
-    # x = torch.einsum('bctn,bctq->bctnq', x, x)
-    # y = torch.einsum('bctn,bctq->bctnq', y, y)
-    # return torch.max(torch.abs(x-y), dim=1)
-
+        return torch.cdist(x, y) 
 
 class TemporalGraph(nn.Module):
     def __init__(self, in_channels, k=4, drop_path=0.0):
@@ -89,46 +63,7 @@ class TemporalGraph(nn.Module):
         x = self.up_conv(x).permute(0, 2, 1, 3, 4).contiguous().view(tlen, c, h, w)
         return x
 
-
-    # class TemporalGraph(nn.Module):
-#     def __init__(self, in_channels, k=4, drop_path=0.0):
-#         super(TemporalGraph, self).__init__()
-#         self.graph_conv = GrapherT(in_channels=in_channels, kernel_size=k, dilation=1, conv='edge', act='relu', norm=None,
-#                  bias=True,  stochastic=False, epsilon=0.0, r=1, drop_path=0.0, relative_pos=False)
-#
-#     def forward(self, x, batch):
-#         tlen, c, h, w =x.shape
-#         x = x.view(batch, -1, c, h, w)
-#         b, v, c, h, w, =x.shape
-#         x = rearrange(x, "b v c h w-> b c v (h w)")
-#         x = self.graph_conv(x)
-#         x = x.view(b, c, v, h,w)
-#         x = rearrange(x, "b c v h w -> (b v) c h w")
-#         return x
-
-def test_new():
-    # x = torch.rand([78, 256, 14, 14]).to("cuda:1")
-    # model = TemporalGraph(k=4, in_channels=256, drop_path=0).to("cuda:1")
-    # y = model(x, 2)
-    # print(y.shape)
-    x= torch.ones([1,2,3, 4])+1
-    y =  torch.ones([1,2,3, 4]) +2
-    print(x, y)
-    print(F.softmax(sim(x,y)))
-
-if __name__ == '__main__':
-    test_new()
-    # model = TemporalGraph(k=4, in_channels=32, drop_path=0)
-    # torch.manual_seed(1)
-    # seed=2
-    # torch.manual_seed(seed)
-    # torch.cuda.manual_seed_all(seed)
-    # np.random.seed(seed)
-    # random.seed(seed)
-    # x = torch.rand([6,32,3,3])
-    # # print(x)
-    # x_len = [3,2]
-    #
+ 
     # y = model(x, 2)
     #
     # print(y.shape)
