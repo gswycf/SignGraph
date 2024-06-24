@@ -18,7 +18,7 @@ from collections import OrderedDict
 
 faulthandler.enable()
 import utils 
-from seq_scripts import seq_train, seq_eval, seq_feature_generation
+from seq_scripts import seq_train, seq_eval
 from torch.cuda.amp import autocast as autocast
 from utils.misc import *
 class Processor():
@@ -301,7 +301,4 @@ if __name__ == '__main__':
     processor = Processor(args)
     utils.pack_code("./", args.work_dir)
     processor.start()
-
-#
-#torchrun --nproc_per_node=4 main.py
-# python -m torch.distributed.launch --nproc_per_node=3 main2.py
+ 
