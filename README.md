@@ -55,7 +55,7 @@ Note that you can choose the target dataset from phoenix2014/phoenix2014-T/CSL/C
  
 ### Thanks
 
-This repo is based on [VAC (ICCV 2021)](https://openaccess.thecvf.com/content/ICCV2021/html/Min_Visual_Alignment_Constraint_for_Continuous_Sign_Language_Recognition_ICCV_2021_paper.html), [VIT (NIPS 2022)](https://arxiv.org/abs/2206.00272) and [RTG-Net (ACM MM2023)](https://dl.acm.org/doi/10.1145/3581783.3611820), Many thanks for their great work!
+This repo is based on [VAC (ICCV 2021)](https://openaccess.thecvf.com/content/ICCV2021/html/Min_Visual_Alignment_Constraint_for_Continuous_Sign_Language_Recognition_ICCV_2021_paper.html), [VIT (NIPS 2022)](https://arxiv.org/abs/2206.00272) and [RTG-Net (ACM MM2023)](https://dl.acm.org/doi/10.1145/3581783.3611820)！
 
 ### Citation
 
