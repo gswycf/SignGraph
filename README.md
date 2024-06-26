@@ -36,9 +36,9 @@ We make some imporvments of our code, and provide newest checkpoionts and better
 
 |Dataset | Backbone | Dev WER | Del / Ins | Test WER  | Del / Ins | Pretrained model                                            |
 | --------| -------- | ---------- | ----------- | ----------- | -----------| --- |
-|Phoenix14T | SignGraph |  17.00|04.99/ 02.32| 19.44| 05.14/03.38|[[Google Drive]](https://drive.google.com/drive/folders/1FVvbXV7f2-5lJhVlCm-bqzyZ55C1LQ-g?usp=sharing) |
-|Phoenix14 |SignGraph|17.13|06.00/02.17| 18.17| 05.65/02.23|[[Google Drive]](https://drive.google.com/drive/folders/1O5JBkmnu2TO8Domzd60tqql8l1zNCzHc?usp=sharing) |
-|CSL-Daily |SignGraph|26.38|9.92/2.62| 25.84| 9.39/2.58|[[Google Drive]](https://drive.google.com/drive/folders/1t09Ixpiujw6WJrkSF8gwexvKJie4RGsh?usp=sharing) |
+|Phoenix14T | SignGraph |  17.00|4.99/2.32| 19.44| 5.14/3.38|[[Google Drive]](https://drive.google.com/drive/folders/1FVvbXV7f2-5lJhVlCm-bqzyZ55C1LQ-g?usp=sharing) |
+|Phoenix14 |SignGraph|17.13|6.00/2.17| 18.17|5.65/2.23|[[Google Drive]](https://drive.google.com/drive/folders/1O5JBkmnu2TO8Domzd60tqql8l1zNCzHc?usp=sharing) |
+|CSL-Daily |SignGraph|26.38|9.92/2.62| 25.84|9.39/2.58|[[Google Drive]](https://drive.google.com/drive/folders/1t09Ixpiujw6WJrkSF8gwexvKJie4RGsh?usp=sharing) |
 
 
 
