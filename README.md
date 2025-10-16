@@ -1,6 +1,10 @@
 # SignGraph: A Sign Sequence is Worth Graphs of Nodes
 An implementation of the paper: SignGraph: A Sign Sequence is Worth Graphs of Nodes. (CVPR 2024) [[paper]](https://openaccess.thecvf.com/content/CVPR2024/papers/Gan_SignGraph_A_Sign_Sequence_is_Worth_Graphs_of_Nodes_CVPR_2024_paper.pdf)
 
+# MixSignGraph: MixSignGraph: A Sign Sequence is Worth Mixed Graphs of Nodes
+
+A new CSLR, SLT, Gloss-free SLT model are coming
+
 ## Prerequisites
 
 - This project is implemented in Pytorch (>1.8). Thus please install Pytorch first.
