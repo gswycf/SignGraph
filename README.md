@@ -10,7 +10,7 @@ An implementation of the paper: SignGraph: A Sign Sequence is Worth Graphs of No
 - For these who failed install ctcdecode (and it always does), you can download [ctcdecode here](https://drive.google.com/file/d/1LjbJz60GzT4qK6WW59SIB1Zi6Sy84wOS/view?usp=sharing), unzip it, and try    
 `cd ctcdecode` and `pip install .`
 
-- Pealse follow [this link](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html) to install pytorch geometric
+- Please follow [this link](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html) to install pytorch geometric
 
 - You can install other required modules by conducting 
    `pip install -r requirements.txt`
